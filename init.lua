@@ -1,3 +1,8 @@
+-- Ensure cwd is valid
+if vim.loop.cwd() == nil then
+	vim.cmd([[cd ~]])
+end
+
 -- Set leader key to space
 vim.g.mapleader = " "   -- global leader
 
