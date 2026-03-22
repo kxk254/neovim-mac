@@ -59,3 +59,9 @@ vim.keymap.set({ "n", "v" }, "<leader>f", function()
     timeout_ms = 750,       -- prevent hanging on large files
   })
 end, { desc = "Format buffer / selection (Prettier + fallback)" })
+
+-- rest nvim
+vim.keymap.set("n","<leader>rr","<cmd>Rest run<CR>", {desc = "Rest run" })
+
+-- black for python
+vim.keymap.set("n","<leader>bf",":!black %<CR>", {desc = "Format with Black" })
